@@ -365,12 +365,17 @@ footer a {
   text-decoration: overline;
   /* padding-bottom: 1rem; */
 }
+footer section.right {
+  margin-left: 0.5rem;
+  padding: 2rem;
+}
 
 footer section.left {
   display: flex;
   max-width: 50vw;
   align-items: top;
   flex-wrap: wrap;
+  padding: 2rem;
   justify-content: space-between;
 }
 
@@ -394,3 +399,5 @@ footer section div {
   }
 
 }
+
+
