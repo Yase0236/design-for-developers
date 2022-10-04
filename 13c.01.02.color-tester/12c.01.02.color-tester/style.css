@@ -1,0 +1,241 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --color-primary1: #f4f8f5;
+  --color-primary2: #deede2;
+  --color-secondary1: #393c3a;
+  --color-secondary2: #010b04;
+  --color-accent1: #88fa8d;
+  --color-accent2: #e10c96;
+  /* Notice you can do this: --color-accent2: var(--color-accent1);*/
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  background-color: #888;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 1.2rem;
+}
+
+.color1 {
+  background-color: var(--color-primary1);
+}
+.color2 {
+  background-color: var(--color-primary2);
+}
+.color3 {
+  background-color: var(--color-secondary1);
+}
+.color4 {
+  background-color: var(--color-secondary2);
+}
+.color5 {
+  background-color: var(--color-accent1);
+}
+.color6 {
+  background-color: var(--color-accent2);
+}
+
+.colorbox {
+  min-width: 2rem;
+  min-height: 2rem;
+  width: 10vh;
+  height: 10vh;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.7rem;
+}
+
+p.small {
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+p.bold {
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+header {
+  padding: 2.1rem;
+}
+
+section {
+  padding: 0px 2.1rem;
+}
+
+#colors {
+  display: grid;
+  align-items: top;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  grid-gap: 4.2rem;
+}
+
+#colors article {
+  margin-bottom: 2.1rem;
+}
+
+#samples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.percent100 {
+  width: 100%;
+  height: 20vh;
+  min-height: 4.2rem;
+}
+
+.percent100 div {
+  float: left;
+}
+
+.percent30 {
+  width: 30%;
+  height: 100%;
+}
+.percent15 {
+  width: 15%;
+  height: 100%;
+}
+.percent5 {
+  width: 5%;
+  height: 100%;
+}
+
+#tests {
+  display: grid;
+  align-items: top;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2.1rem;
+}
+
+.test {
+  display: flex;
+  padding: 2.1rem;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.circle1 {
+  position: relative;
+  z-index: 1000;
+  top: 1rem;
+  left: 55%;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 1.4rem;
+}
+
+.circle2 {
+  position: relative;
+  top: -1rem;
+  left: 60%;
+  width: 6.3rem;
+  height: 6.3rem;
+  border-radius: 2.8rem;
+}
+
+.box {
+  width: 6.3rem;
+  height: 2.1rem;
+  margin: 0px auto;
+}
+
+#test1 {
+  background-color: var(--color-primary1);
+  color: var(--color-secondary2);
+}
+
+#test1 .circle1 {
+  background-color: var(--color-secondary1);
+}
+
+#test1 .circle2 {
+  background-color: var(--color-primary2);
+}
+
+#test1 .box {
+  background-color: var(--color-accent2);
+}
+
+#test1 p {
+  color: var(--color-secondary1);
+}
+
+#test2 {
+  background-color: var(--color-primary2);
+  color: var(--color-secondary2);
+}
+
+#test2 .circle1 {
+  background-color: var(--color-secondary1);
+}
+
+#test2 .circle2 {
+  background-color: var(--color-primary1);
+}
+
+#test2 .box {
+  background-color: var(--color-accent2);
+}
+
+#test1 p {
+  color: var(--color-secondary1);
+}
+
+#test3 {
+  background-color: var(--color-secondary1);
+}
+
+#test3 .circle1 {
+  background-color: var(--color-primary2);
+}
+
+#test3 .circle2 {
+  background-color: var(--color-secondary2);
+}
+
+#test3 .box {
+  background-color: var(--color-accent2);
+}
+
+#test3 p {
+  color: var(--color-primary2);
+}
+
+#test4 {
+  background-color: var(--color-secondary2);
+}
+
+#test4 .circle1 {
+  background-color: var(--color-primary2);
+}
+
+#test4 .circle2 {
+  background-color: var(--color-secondary1);
+}
+
+#test4 .box {
+  background-color: var(--color-accent1);
+}
+
+#test4 p {
+  color: var(--color-primary2);
+}

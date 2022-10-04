@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #F2F1F0;
+}
+
+/****************custom propertie*****************/
+:root {
+    --font-primary: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, p, a, li {
+    font-family: var(--font-primary);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4, p {
+    font-size: 1rem;
+}
+/****************header***************/
+nav{
+    background-color: white;
+    justify-content: space-around;
+    display: flex;
+    /* align-items: flex-start; */
+    /* flex-direction: column; */
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+#introduction {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    /* display: flex; */
+    justify-content: center;
+    /* gap: 1rem; */
+    margin: 1rem;
+    padding: 1rem;
+}
+#introduction p {
+    font-size: 1rem;
+}
+#selection {
+    margin: 1rem;
+    padding: 1rem;
+
+}
+ul {
+    padding: 1rem;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2rem;
+}
+
+#logo em {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 2rem;
+    /* text-transform: none; */
+
+}
+/***************ui elements**************************/
+.signUpButton {
+    background-color: rgb(217, 75, 5);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+input[type=button] {
+    padding: 0.5rem 1rem;
+    font-family: var(--font-primary);
+}
+.blackButtons{
+    background-color: black;
+    color: white;
+
+}
+
+/**********************card styling**********************/
+.card_media {
+    padding: 1rem; 
+    /* margin: 1rem;*/
+    border: 1px solid black;
+    /* background-color: rgb(206, 220, 220); */
+}
+img {
+    object-fit: cover;
+    max-width: 50%;
+    max-height: 50%;
+}

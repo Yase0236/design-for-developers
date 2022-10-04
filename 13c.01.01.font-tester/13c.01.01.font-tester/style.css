@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* websites to use to find font heirachy etc. */
+/* to find the font heirachy - https://type-scale.com/ */
+/* google font pairings - https://www.figma.com/google-fonts/ */
+/* google fonts - https://fonts.google.com/ */
+
+/* lobster two and lato are a great match */
+:root {
+    --font-display: "Josefin Sans", sans-serif;
+    --font-paragraph: "Lato", sans-serif;
+    --font-color: Purple;
+}
+
+html {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-display);
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--font-color);
+    text-decoration: underline;
+    font-family: var(--font-display);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    /* font-style: normal; */
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-family: var(--font-paragraph);
+    font-size: 0.75rem;
+    line-height: 2;
+    color: var(--font-color);
+}
+
+p.small {
+    font-size: 0.5rem;
+    line-height: 1.5;
+}
+
+header {
+    padding: 2rem;
+}
+
+section {
+    padding: 0rem 2rem;
+}
+
+.one_two_grid {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+.one_one_one_grid {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inline {
+    display:inline;
+}
+
+.display { 
+    font-family: var(--font-display);
+}
+
+.paragraph {
+    font-family: var(--font-paragraph);
+}
+
+.small_space {
+    height: 2rem; 
+}
+
+.space {
+    height: 4rem;
+}
