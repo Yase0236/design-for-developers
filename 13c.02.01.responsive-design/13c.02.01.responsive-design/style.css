@@ -1,0 +1,324 @@
+/********************Resetter********************/
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--font-family);
+    /* background-color: var(--bg); */
+}
+/*****************custom properties*********************/
+:root {
+    --text-color: #0077ff; 
+    --text-darker: #7678a3;
+    --text-lighter: #e7e6e4;
+    --text-shadow: #1f2584;
+    --text-primary-color: rgb(198, 201, 222); 
+    --font-family: "Anton", sans-serif;
+    --secondary-font: "Poppins", sans-serif;
+}
+/*************************Fonts*************************/
+
+h1,
+h2,
+h3 {
+  color: var(--text-shadow);
+  font-family: var(--font-family);
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 3.052rem;
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 1.953rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+h3 {
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+p,a {
+    color: var(--text-shadow);
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+/***************************UI Elements**********************/
+button {
+    display: inline-block;
+    height: 3.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--text-shadow);
+    color: var(--text-lighter);
+    border: 1px solid #8f96bd;
+    box-shadow: 6px 6px 12px #8f96bd,
+     -6px -6px 12px #829af4; 
+}
+img {
+    max-width: 100%;
+    width: 100vh;
+    height: auto;
+    object-fit: cover;
+}
+/**********************Menu**************************/
+nav {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-darker);
+}
+  
+nav a {
+    color: var(--text-shadow);
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+nav a.logo {
+    font-family: var(--font-family);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+  
+nav li {
+    display: inline-block;
+    margin: 0px 1rem;
+}
+/************Header**********************/
+header {
+    display: flex;
+    min-height: 80vh;
+    padding: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--text-primary-color);
+}
+/************section - advantages**********************/
+#advantages {
+    padding: 5rem;
+    background-color: var(--text-darker);
+}
+
+#advantages h1,h2,h3,h4 {
+    color: var(--text-shadow);
+}
+#advantages h2{
+    text-decoration: underline;
+    text-align: center;
+}
+#advantages p{
+    color: black;
+}
+
+.advantages_cards {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 0.5rem;
+    justify-items: center;
+}
+.advantages_card {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    background-color: beige;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--color-dark) 0 15px 30px -5px;
+}
+.card_image{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    /* margin: 1rem; */
+    padding: 1rem;
+}
+.advantages_card_text {
+    padding: 1rem;
+}
+/************section - product**********************/
+#product .headline{
+    color: var(--text-lighter);
+}
+.product_text h3, p{
+    color: var(--text-lighter);
+}
+/* .headline{
+    color: var(--text-color);
+    position: relative;
+}
+
+.headline::after{
+    content: "";
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background-color: black;
+    opacity: 0.25;
+} */
+
+.product_image{
+    width: 100%;
+    height: 100%;
+}
+#product{
+    background-color: var(--text-shadow); 
+    padding: 2rem;
+    background-image: url("images/graphics.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.product_container{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 2fr));
+    grid-gap: 1rem;
+    justify-items: center;
+}
+/* 
+.product_graphics {
+
+}
+.product_text{
+
+} */
+
+
+/************section - highlight**********************/
+.highlight{
+    background-color: var(--text-darker);
+    padding: 4rem;
+}
+.highlight h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 3rem;
+}
+.highlight_small_cards{
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+}
+.highlight_card{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: beige;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--text-shadow) 0 15px 30px -5px;
+}
+.highlight_card p, h3 {
+    color: var(--text-shadow);
+}
+/* .highlight_button {
+} */
+
+/************section - team**********************/
+#team {
+    margin: 1rem;
+    padding: 1rem;
+}
+#team h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.team_column {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+}
+.team_graphics {
+    /* background-image: url(images/graphics2.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.team_image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.team_text {
+    padding: 2rem;
+    margin: 1rem;
+    justify-content: flex-start;
+}
+/************section - contact**********************/
+#contact{
+    background-color: var(--text-darker);
+}
+
+
+/*********************Footer**************************/
+footer {
+    display: flex;
+    padding: 5vh 2rem;
+    align-items: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--text-color);
+    color: var(--text-shadow);
+}
+footer li:hover {
+    transform: scale(1.5);
+}
+footer h2,
+footer h3 {
+  color: var(--text-lighter);
+  margin-bottom: 1rem;
+} 
+footer a {
+    color: var(--text-lighter);
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    text-decoration: overline;
+}
+footer section div {
+    margin: 0px 1rem 1rem 1rem;
+}
+  
+@media screen and (max-width: 768px) {
+    html {
+      font-size: 0.9em;
+    }
+  
+    #product h2 {
+      font-size: 1.953rem;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+    .highlight div h2 {
+      font-size: 3.052rem;
+      line-height: 3.5rem;
+    }
+  
+}

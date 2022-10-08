@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Component Builder</title>
+    <!-- Template adapted from https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/ -->
+    <!-- Lorem Ipsum from https://loremizr.monkeymatt.com/ -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div>
+      <h2>Corrupti e lorem ut fecerunt contrarii.</h2>
+      <h3>Qui liberum augue eum nam arcui.</h3>
+      <p>Etiam nisi nunc strictus comparuit ad magnae qui invasor atque in proin instituendarum minus mus nam-fugit ordinationis.</p>
+    </div>
+    <div>
+      <input type="text" /><br />
+      <input type="button" value="Lorem Ipsum" /><br />
+    </div>
+    <div>
+      <svg class="small_graphic">
+        <use href="#box"></use>
+      </svg>
+      <svg class="medium_graphic">
+        <use href="#box"></use>
+      </svg>
+      <svg class="big_graphic">
+        <use href="#box"></use>
+      </svg>
+    </div>
+    <div>
+      <svg class="small_graphic circle">
+        <use href="#circle"></use>
+      </svg>
+      <svg class="medium_graphic circle">
+        <use href="#circle"></use>
+      </svg>
+      <svg class="big_graphic circle">
+        <use href="#circle"></use>
+      </svg>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<defs>
+  <svg id="box" viewBox="0 0 100 100">
+    <rect x="1" y="1" width="98" height="98" />
+    <path d="M 1 1 L 99 99" />
+    <path d="M 1 99 L 99 1" />
+  </svg>
+  <svg id="circle" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="49" />
+    <path d="M 1 50 L 99 50" />
+    <path d="M 50 1 L 50 99" />
+  </svg>
+</defs>

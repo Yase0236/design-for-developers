@@ -1,0 +1,23 @@
+Assignment
+- Use CSS Flex, Grid, min width/height and media queries to layout the page.
+
+Layout
+- Start by looking at the HTML in the browser and reading through the HTML in VS Code. 
+- Try to recognize what elements are components and what should be layouts. 
+- Then place the elements using using Flex and Grid. 
+- You are encouraged to look in the HTML and CSS you have used throughout the course. 
+- You are welcome to add more divs if it make the assignment easier.
+
+Images
+- The header background and all divs with a class called something with “_graphics” should have an image as background-image. 
+- You can use services like https://stock.adobe.com/, https://www.shutterstock.com/ or https://www.pexels.com/ to find something you like. 
+- When you have added background-image rules use width, height, min-width and min-height to get the size you like. 
+- Remember rem, vh and vw are good for responsive units.
+- (tip) background-repeat, background-size and background-position may need to be set.
+
+
+Extra
+- You are encouraged to add fonts and a font hierarchy; 
+- working in rem is also a part of making a website responsive.
+- Also you are encouraged to add colors to your design.
+

@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+ 
+svg {
+  fill: none;
+  stroke: #000;
+}
+
+defs {
+  display: none;
+}
+
+.circle {
+  transform: rotate(45deg);
+
+}
+
+.small_graphic {
+  width: 4rem;
+  height: 4rem;
+  stroke-width: 0.2rem;
+}
+
+.medium_graphic {
+  width: 8rem;
+  height: 8rem;
+  stroke-width: 0.1rem;
+}
+
+.big_graphic {
+  width: 16rem;
+  height: 16rem;
+  stroke-width: 0.05rem;
+}
