@@ -182,13 +182,18 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: var(--text-primary-color);
-    background-image: url(images/background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-blend-mode:hard-light;
+    background-image: url(images/picture.jpg);
 }
-header h1 {
+.container {
+    width: min(900px), 100% - 2rem;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
+.header_text h1 {
     text-align: center;
+    color: rgb(15, 21, 51);
 }
 .header_button{
     text-align: center;
@@ -251,10 +256,6 @@ header h1 {
 .product_text h3, p{
     color: var(--text-lighter);
 }
-/* .headline{
-    color: var(--text-color);
-    position: relative;
-}*/
 
 .product_image{
     max-width: 100%;
@@ -345,18 +346,18 @@ header h1 {
     text-decoration: none;
 }
 #team article {
-    display: flex;
+    display: grid;
     min-height: 50vh;
     padding: 1rem;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    grid-template-columns: 1fr 1fr;
 }
 #team article:first-child {
     min-height: 40vh;
 }
 .team_text {
-    width: 50vw;
+
     min-width: 300px;
     text-align: center;
 }
@@ -371,7 +372,8 @@ header h1 {
     min-width: 150px;
     min-height: 150px;
     padding: 1rem;
-    margin: 3rem;
+    margin: auto;
+    align-self: center;
 }
 .team_graphics object{
     width: 100%;
@@ -388,6 +390,9 @@ header h1 {
 }
 #contact h2, p{
     text-align: center;
+    color: rgb(15, 21, 51);
+    font-weight: bolder;
+    font-size: 1.1rem;
 }
 #contact h2 {
     font-size: 2rem;
