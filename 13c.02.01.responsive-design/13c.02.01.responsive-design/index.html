@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+
     <title>Responsive Design</title>
     <!--Template adapted from https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/ -->
     <!-- Inspired by https://textluke.com/ & https://carrot.tech/ for educational purpose-->
@@ -11,7 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,13 +22,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav role="navigation">
       <!-- Menu component layout -->
-      <a href="index.html">Logo</a>
+      <a href="index.html" class="logo">Logo</a>
       <ul>
-        <li><a href="#advantages">Advantages</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#team">Team</a></li>
+        <li>
+          <a href="#advantages">Advantages</a>
+        </li>
+        <li>
+          <a href="#product">Product</a>
+        </li>
+        <li>
+          <a href="#team">Team</a>
+        </li>
       </ul>
       <button type="button">Learn More &#x2794;</button>
     </nav>
@@ -37,9 +45,8 @@
       <div class="header_text">
         <h1>Corrupti e lorem ut fecerunt contrarii.</h1>
         <p>Non utriuque solatium amet netus nobis cum metus securus fecerunt oppressus eu oportunitatis error est quae interpretes corporis - v tot ullo s Verius.</p>
-        <button type="button">Request Demo &#x2794;</button>
+        <div class="header_button"><button type="button">Request Demo &#x2794;</button></div>
       </div>
-      <img src="images/picture.jpg" alt="random" />
       <div class="header_graphics"></div>
     </header>
 
@@ -96,7 +103,7 @@
         <!-- Two columns: graphics to the left, text to the right -->
 
         <div class="product_container">
-          <div class="product_graphics"><img src="images/picture.jpg" alt="random" class="product_image" /></div>
+          <div class="product_graphics"><img src="images/graphics2.jpg" alt="random" class="product_image" /></div>
 
           <div class="product_text">
             <article>
@@ -139,9 +146,11 @@
       <section id="team">
         <h2>Meet the Team</h2>
         <!-- Components with graphics to one side and text to the other -->
-        <article class="team_column">
-          <img src="images/picture.jpg" alt="random" class="team_image" />
-          <section class="team_graphics"></section>
+        <article class="team_wrapper">
+          <section class="team_graphics">
+            <object data="graphics/education-graduate-graduation-cap-svgrepo-com.svg"></object>
+          </section>
+
           <section class="team_text">
             <h3>Cras</h3>
             <ul>
@@ -150,12 +159,12 @@
               <li>- Risus terrestres</li>
               <li>- Neque quae peccat</li>
             </ul>
+
             <a href="#contact">Contact Cras &#x2794;</a>
           </section>
         </article>
 
-        <article class="team_column">
-          <!-- Change order here so text comes first then graphics -->
+        <article class="team_wrapper">
           <section class="team_text">
             <h3>Ipsum Sapien</h3>
             <ul>
@@ -166,26 +175,32 @@
             </ul>
             <a href="#contact">Contact Ipsum Sapien &#x2794;</a>
           </section>
-          <section class="team_graphics"></section>
 
-          <img src="images/picture.jpg" alt="random" class="team_image" />
+          <section class="team_graphics">
+            <object data="graphics/education-graduate-graduation-cap-svgrepo-com.svg"></object>
+          </section>
         </article>
       </section>
 
       <section id="contact">
-        <h2>Iudicia quod fames?</h2>
+        <h2>Ludicia quod fames?</h2>
         <p>Vel w tibi progressionem exequi tincidunt ullo Modo'd orator depauperatio sapiente convallis.</p>
         <!-- Contact form section layout -->
         <form id="contact_form">
-          <!-- Two column layout, name and email a column each, message two columns. Labels should be over input-->
+          <!-- Two column layout, name and email a column each, 
+            message two columns. Labels should be over input-->
           <div class="form_group">
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="Name" required />
+            <div class="columns">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="Name" required />
+            </div>
           </div>
 
           <div class="form_group">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="Email" required />
+            <div class="columns">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="Email" required />
+            </div>
           </div>
 
           <div class="form_group">
@@ -194,7 +209,7 @@
           </div>
 
           <div class="form_group">
-            <button type="submit">Send Message</button>
+            <button type="submit" class="message_button">Send Message</button>
           </div>
         </form>
       </section>
