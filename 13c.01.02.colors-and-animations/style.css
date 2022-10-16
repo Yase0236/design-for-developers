@@ -4,7 +4,7 @@
   padding: 0px;
   list-style: none;
 }
-body{
+body {
   margin: 0%;
   padding: 0%;
   font-family: var(--font-family);
@@ -13,12 +13,12 @@ body{
 /***********dark theme***********/
 /*****************custom properties*********************/
 :root {
-  --text-color: #0077ff; 
+  --text-color: #0077ff;
   --text-darker: #7678a3;
   --text-lighter: #e7e6e4;
   --text-shadow: #1f2584;
-  --text-secondary-color: #FF6C00;
-  --text-primary-color: black; 
+  --text-secondary-color: #ff6c00;
+  --text-primary-color: black;
   --font-family: "Anton", sans-serif;
   --secondary-font: "Poppins", sans-serif;
 }
@@ -99,7 +99,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-
 h3 {
   font-family: var(--font-family);
   font-size: 1.25rem;
@@ -134,8 +133,7 @@ button {
   background-color: var(--text-shadow);
   color: var(--text-lighter);
   border: 1px solid #e8e8e8;
-  box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 .dark_button {
   background-color: var(--text-secondary-color);
@@ -150,13 +148,11 @@ button {
   /* font-size: 2rem; */
   border-radius: 0.5em;
   border: 1px solid #e8e8e8;
-  box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 .dark_button:active {
   color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5,
-             inset -4px -4px 12px #ffffff;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 .dark_button:before {
   content: "";
@@ -213,31 +209,33 @@ input[type="text"] {
   color: #222;
 }
 button:hover {
-  background-color:var(--text-secondary-color);
+  background-color: var(--text-secondary-color);
   color: var(--color-text);
-} 
+}
 /* mouse cursor */
-div.clickEffect{
-  position:fixed;
-  box-sizing:border-box;
-  border-style:solid;
-  border-color:#FFFFFF;
-  border-radius:50%;
-  animation:clickEffect 0.4s ease-out;
-  z-index:99999;
+div.clickEffect {
+  position: fixed;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 50%;
+  animation: clickEffect 0.4s ease-out;
+  z-index: 99999;
+}
+@keyframes clickEffect {
+  0% {
+    opacity: 1;
+    width: 0.5em;
+    height: 0.5em;
+    margin: -0.25em;
+    border-width: 0.5em;
   }
-  @keyframes clickEffect{
-  0%{
-    opacity:1;
-    width:0.5em; height:0.5em;
-    margin:-0.25em;
-    border-width:0.5em;
-  }
-  100%{
-    opacity:0.2;
-    width:15em; height:15em;
-    margin:-7.5em;
-    border-width:0.03em;
+  100% {
+    opacity: 0.2;
+    width: 15em;
+    height: 15em;
+    margin: -7.5em;
+    border-width: 0.03em;
   }
 }
 .progress {
@@ -320,7 +318,7 @@ header button {
   margin-bottom: 1rem;
   padding: 3rem;
 }
-.header_graphics object{
+.header_graphics object {
   width: 100%;
   height: 100%;
 }
@@ -374,7 +372,7 @@ header button {
   background-color: #ccc;
   border-radius: 300px;
 }
-.product_graphics object{
+.product_graphics object {
   width: 100%;
   height: 100%;
 }
@@ -398,15 +396,17 @@ header button {
   font-size: 4.2rem;
   line-height: 4rem;
 }
-.highlight a, .product_text a {
+.highlight a,
+.product_text a {
   display: inline-block;
   position: relative;
   color: var(--text-shadow);
   text-decoration: none;
   cursor: pointer;
 }
-.highlight a:after, .product_text a:after {
-  content: '';
+.highlight a:after,
+.product_text a:after {
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -418,7 +418,8 @@ header button {
   transition: transform 0.35s ease-out;
 }
 
-.highlight a:hover:after,.product_text a:hover:after {
+.highlight a:hover:after,
+.product_text a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -438,13 +439,15 @@ header button {
   min-width: 300px;
 }
 #request h2 {
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   line-height: 2.2rem;
 }
 #request p {
-  color: var(--text-lighter)
+  color: var(--text-lighter);
 }
-.dark_button, #request button {
+.dark_button,
+#request button,
+.header_button {
   margin-top: 1rem;
   border: none;
   outline: none;
@@ -456,15 +459,15 @@ header button {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-direction: alternate;  
+  animation-direction: alternate;
 }
 
 @keyframes puls_kf {
   0% {
-  transform: scale(0.8);
+    transform: scale(0.8);
   }
   100% {
-  transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -528,7 +531,4 @@ footer section div {
     font-size: 3.052rem;
     line-height: 3.5rem;
   }
-
 }
-
-

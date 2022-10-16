@@ -362,7 +362,6 @@ h3 {
 
 /************section - team**********************/
 #team {
-  /* margin: 1rem; */
   padding: 5rem 3rem;
 }
 #team h2 {
@@ -372,12 +371,22 @@ h3 {
 #team a {
   text-decoration: none;
 }
+.team_cards {
+  display: flex;
+  flex-direction: row;
+}
+
 #team article {
   display: grid;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   padding: 1rem;
   align-items: center;
   grid-template-columns: 1fr 1fr;
+
+  border-radius: 15px;
+  background-color: var(--text-lighter);
+  box-shadow: var(--text-color) 0 15px 30px -5px;
+  margin: 2rem;
 }
 @media screen and (max-width: 700px) {
   #team article {
@@ -388,7 +397,7 @@ h3 {
   min-height: 40vh;
 }
 .team_text {
-  min-width: 300px;
+  /* min-width: 300px; */
   text-align: center;
 }
 #team article:first-child .team {
