@@ -193,12 +193,12 @@ nav a.logo {
 }
 /************Header**********************/
 header {
-  display: flex;
+  /* display: flex; */
   /* min-height: 80vh; */
   padding: 5rem;
-  align-items: center;
+  /* align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   background-color: var(--text-primary-color);
   background-image: url(images/picture.jpg);
 }
@@ -363,6 +363,7 @@ h3 {
 /************section - team**********************/
 #team {
   padding: 5rem 3rem;
+  margin: 5rem;
 }
 #team h2 {
   text-align: center;
@@ -374,6 +375,14 @@ h3 {
 .team_cards {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 700px) {
+  .team_cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 
 #team article {
@@ -390,7 +399,9 @@ h3 {
 }
 @media screen and (max-width: 700px) {
   #team article {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
   }
 }
 #team article:first-child {
